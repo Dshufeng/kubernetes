@@ -15,6 +15,7 @@
 
 * [Kubernetes1.8.3 集群环境搭建CentOS7](http://blog.csdn.net/a632189007/article/details/78815807)
 * [Kubernetes dashboard1.8.0 WebUI安装与配置](http://blog.csdn.net/a632189007/article/details/78840971)
+* [kubeadm 搭建 kubernetes 集群(各种坑之集合)](https://mritd.me/2016/10/29/set-up-kubernetes-cluster-by-kubeadm/)
 
 ### 负载均衡
 
