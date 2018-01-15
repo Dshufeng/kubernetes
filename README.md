@@ -9,6 +9,7 @@
 
 * [k8s入门系列之介绍篇](http://blog.csdn.net/magerguo/article/details/72123278)
 * [Kubernetes中Service机制](https://www.jianshu.com/p/bbb673e79c3e)
+* [Kubernetes DNS部署](http://blog.csdn.net/carter115/article/details/51133688)
 
 ### 部署
 
