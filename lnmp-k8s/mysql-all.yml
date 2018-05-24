@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-svc
+  labels:
+    name: mysql-svc
+spec:
+  selector:
+    name: k8s-mysql 
+  ports:
+  - port: 3306
+    targetPort: 3306
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: k8s-mysql
+  labels:
+    name: k8s-mysql
+spec:
+  replicas: 1
+  selector:
+    name: k8s-mysql
+  template:
+    metadata:
+      labels:
+        name: k8s-mysql
+    spec:
+      containers:
+      - name: master
+        image: mysql:5.7
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "123456"
+        - name: MYSQL_USER
+          value: 'dsf'
+        - name: MYSQL_PASSWORD
+          value: '123456'
+        - name: MYSQL_DATABASE
+          value: 'test'
+
